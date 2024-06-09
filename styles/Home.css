@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: "Helvetica", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-color);  /* Using custom property for text color */
+    background-color: var(--primary-blue, #fff);
+}
+
+/* Header & Navigation Styles */
+header {
+    font-family: "Helvetica", sans-serif;
+    background-color: var(--primary-green); /* Primary blue background */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin: 0.5rem 0;
+    font-size: 2.5rem;
+}
+
+
+
+nav ul {
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 5  px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    background-color: rgb(0, 0, 0); /* Or another color of your choice */
+    color: white; /* Ensure good contrast with the background */
+    padding: 0.75rem 1.25rem;  /* Adjust padding for larger buttons */
+    border: none;          /* Remove default border */
+    border-radius: 5px;     /* Round the corners */
+    transition: all 0.3s ease; /* Add smooth transitions */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-blue); /* Secondary blue on hover */
+    color: white;  /* Optional: white text on hover */
+}
+
+/* Section Styles (Example) */
+section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: #fff;  /* Keep sections white for contrast */
+}
+
+/* Additional Styles */
+
+.button {  /* Example button styling */
+    background-color: var(--primary-purple); 
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p, ul, li { /* Style text elements */
+    color: var(--text-color, #333); /* Fallback to dark gray */
+}
+
+.logo {
+    width: 270px;
+    height: 200px;
+}
